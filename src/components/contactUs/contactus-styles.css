@@ -1,0 +1,33 @@
+.contactUsContainer{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 1000px;
+    min-height: 60vh;
+    column-gap: 40px;
+    margin:150px auto;
+}
+.contactUsContainer img{
+    width:400px;
+    height: 60vh;
+    object-fit: cover;
+}
+.formLabel{
+    color: var(--main-color);
+}
+@media screen and (max-width: 900px){
+    .contactUsContainer {
+    flex-direction: column;
+        width:80vw;
+        row-gap:50px;
+        margin:10px auto;
+
+    }
+    .contactUsContainer img{
+        width:80%;
+        height: auto;
+    }
+    }

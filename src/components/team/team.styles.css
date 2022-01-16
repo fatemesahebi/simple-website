@@ -1,0 +1,80 @@
+.cardImage{
+    width:100%;
+    height: 350px;
+    object-fit: cover;
+}
+.card{
+    background-color:white;
+    border-radius: 10%;
+    margin:20px;
+}
+.card:hover{
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+.teamContainer{
+    display: flex;
+    flex-direction: row;
+  justify-content: center;
+}
+.row{
+    --bs-gutter-x: 0 !important;
+}
+.cardBody{
+    padding: 30px 10px;
+}
+.cardButton{
+    background-color: var(--main-color);
+    justify-self: center;
+    border: none;
+    outline: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+#searchBox{
+    position: relative;
+    margin-left: auto;
+    margin-right: 100px;
+    color: var(--main-color);
+}
+#searchBox input{
+    border: none;
+    outline: none;
+    background-color:transparent;
+    border-bottom: 3px solid white;
+    color: white;
+}
+#searchBox ion-icon{
+    font-size: 30px;
+    margin-top: 5px;
+}
+.teamHeader{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+}
+.teamHeader h1{
+    color:white;
+    font-size:100px;
+    font-weight:700;
+    padding:100px 0 50px 100px;
+    position: relative;
+
+}
+@media screen and (max-width: 900px){
+    .teamHeader h1 {
+        font-size: 20px;
+        padding: 0;
+    }
+    .teamHeader {
+        flex-direction: column;
+        justify-content: center;
+        justify-items: center;
+        align-content: center;
+        align-items: center;
+    }
+    #searchBox{
+        margin-left:0;
+        margin-right: 0;
+    }
+}

@@ -1,0 +1,93 @@
+.main{
+    width: 100vw;
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    background: url("./../../image/person-background.jpg");
+
+}
+#menuPart{
+    width: 20%;
+    z-index: 100;
+    color: rgba(255, 255, 255, 0.87);
+}
+#outletPart{
+    max-width: 80%;
+}
+.main::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(5, 5, 5, 0.79);
+
+
+
+}
+.menu{
+    height: 100vh;
+    position: relative;
+
+
+}
+.menu__title {
+    font-size: 30px;
+    text-align: center;
+    padding: 100px 10px 50px 10px;
+    font-weight: 700;
+}
+.icon{
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+}
+.icon ion-icon{
+    padding: 5px;
+}
+ .menuItems{
+    padding:20px 5px;
+    text-align:center;
+}
+
+@media screen and (max-width: 900px){
+    .main{
+        flex-direction: column;
+        row-gap: 30px;
+    }
+    #menuPart h2{
+        padding: 20px;
+        margin:0;
+    }
+    #menuPart, #outletPart{
+       max-width: 100vw;
+        width: 100vw;
+    }
+    #menuPart ul{
+        justify-content: flex-start;
+        align-items: flex-start;
+        display: flex;
+        flex-direction: column;
+    }
+   .menu__title{
+       font-size: 18px;
+       padding:20px;
+   }
+    .menuItems{
+        font-size: 14px;
+        padding:0;
+        margin-top: 5px;
+    }
+    #menuPart{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    .icon{
+        display: none;
+    }
+}

@@ -1,0 +1,44 @@
+#header-image {
+    width: 100%;
+    height: 100vh;
+
+    background-size: cover;
+    background-image: url("../../image/teamwork.jpg");
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#header-image::before {
+    content: "";
+    position: absolute;
+
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(5, 5, 5, 0.79);
+}
+
+#header-image h3 {
+    font-size: 50px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    position: relative;
+    color: var(--main-color);
+    width: 60%;
+    margin: auto;
+    text-align: center;
+}
+
+@media screen and (max-width: 900px) {
+    #header-image h3 {
+        font-size: 18px;
+    }
+
+    #header-image {
+        height: 62vh;
+        width: 100vw;
+    }
+}
